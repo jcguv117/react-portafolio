@@ -1,19 +1,66 @@
 import React from "react";
-
-export default function Navbar() {
-    return (
-      <section id="Navbar">
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+// export default function Navbar() {
+//     return (
+//       <section id="Navbar">
       
-        <div className="container mx-auto w-10/12">
-          <nav>
-            <a href="#">Home</a>
-            <a href="#">Acerca de mi</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contacto</a>
-            <div className="animation start-home"></div>
-          </nav>
+//         <div className="container mx-auto w-10/12">
+//           <nav>
+//             <a href="#">Home</a>
+//             <a href="#">Acerca de mi</a>
+//             <a href="#">Habilidades</a>
+//             <a href="#">Proyectos</a>
+//             <a href="#">Contacto</a>
+//             <div className="animation start-home"></div>
+//           </nav>
+//         </div>
+//       </section>
+//     );
+//   }
+
+export default function Navbar({ fixed }) {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  return (
+    <>
+      <nav className="sticky top-0 z-50 flex flex-wrap items-center justify-between px-2 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 mb-3">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <a className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              href="#">
+              CARLOS GUEVARA
+            </a>
+            <button className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button" onClick={() => setNavbarOpen(!navbarOpen)}>
+              <FontAwesomeIcon icon={faBars} />
+            </button>
+          </div>
+          <div
+            className={
+              "lg:flex flex-grow items-center" +
+              (navbarOpen ? " flex" : " hidden")
+            }
+            id="example-navbar-danger" >
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li className="nav-item">
+                <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#">
+                  <span className="ml-2">SOBRE MI</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#skills">
+                  <span className="ml-2">HABILIDADES</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#">
+                  <span className="ml-2">CONTACTO</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
-    );
-  }
+      </nav>
+    </>
+  );
+}
