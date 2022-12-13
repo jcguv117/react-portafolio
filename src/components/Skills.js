@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <section id="skills">
         <h3 className="text-zinc-300">Conocimientos de tecnologías.</h3>
-        <div className="flex flex-wrap lg:w-1/3 sm:mx-auto sm:mb-2 -mx-2">
+        <div className="flex flex-wrap lg:w-1/3 sm:mx-auto sm:mb-2">
           {skills.map((skill) => (
             <div key={skill.name} className="p-2 sm:w-1/3 w-full">
               <div className="bg-gray-800 rounded flex p-4 h-full items-center">

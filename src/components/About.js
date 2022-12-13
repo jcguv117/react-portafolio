@@ -5,22 +5,21 @@ export default function About() {
   return (
     <section id="about">
       
-      <div class="container mx-auto w-9/12 text-left">
-          <p class="text-cyan-600 font-bold mb-4 mt-[3rem]"> Hola, que tal soy</p>
-          <h1 class="text-gray-300 text-4xl sm:text-6xl mb-5 font-bold">Carlos Guevara</h1>
-          <h2 class="text-gray-400 text-4xl sm:text-5xl mb-5 font-bold">Desarrollador web Full Stack!</h2>
-          <p class="text-gray-300 mb-5 text-1xl">
+      <div class="container grid grid-cols-2 gap-4 mx-auto w-9/12 text-left">
+        <div class="col-span-1">
+          <p class="text-gray-300 mb-5 text-xl text-justify">
                 <span class="text-cyan-600">Desarrollador FullStack.</span><br/>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br/>
-                when an unknown printer took a galley of type and scrambled it to make a type <br/>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type
                 specimen book. It has survived not only five centuries, but also the leap into electronic.
           </p>
-          <div class="flex w-full content-center ml-[0rem] sm:ml-[3rem]">
-            <picture class="text-center relative  my-auto">
-              <img src={picture} alt="imagen"/>
-            </picture>
-          </div>
+        </div>
+        <div class="flex w-full content-center ml-[0rem] sm:ml-[3rem]">
+          <picture class="text-center relative  my-auto">
+            <img src={picture} alt="imagen"/>
+          </picture>
+        </div>
           <p class="mb-40 py-5 px-3 w-60"></p>
       </div>
 
@@ -38,6 +37,7 @@ export default function About() {
           </div>
         </div>
       </blockquote>
+
     </section>
   );
 }
