@@ -20,7 +20,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" class="container my-4 py-4">
+    <section id="skills" className="container my-4 py-4">
         <h3 className="text-zinc-300">Conocimientos de tecnologías.</h3>
         <div className="flex flex-wrap lg:w-1/2 sm:mx-auto sm:mb-2">
           {skills.map((skill) => (
@@ -28,7 +28,7 @@ export default function Skills() {
               <div className="bg-gray-800 rounded flex p-4 h-full items-center">
                 <FontAwesomeIcon icon={faCheck} className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
                 <span className="title-font font-medium text-white">
-                  <img class="w-1/3 sm:w-full" src={skill.url} alt={skill.name} />
+                  <img className="w-1/3 sm:w-full" src={skill.url} alt={skill.name} />
                   {/* <FontAwesomeIcon icon={skill.Icon} className="text-zinc-300 w-6 h-6 flex-shrink-0 mr-4" /> */}
                   <tool-tip role="tooltip">{skill.name}</tool-tip>
                 </span>
