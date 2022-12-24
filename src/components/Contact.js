@@ -2,6 +2,7 @@
 export default function Contact() {
   return (
     <section id="contact" className="container my-4 py-4">
+        <h2 className="text-zinc-400">CONTACTAME</h2>
         <div className="flex items-center justify-center m-2 p-2 text-white">
             <form name="contact" method="POST" className="grid gap-x-8 gap-y-2 w-full" data-netlify="true">
                 <div className="w-full">
