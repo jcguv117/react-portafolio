@@ -8,13 +8,12 @@ export default function About() {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-9/12 text-left">
         <div className="col-span-1">
           <p className="text-gray-300 mb-5 text-xl text-justify">
-                <span className="text-cyan-600 font-bold">Desarrollador Web FullStack.</span><br/>
-                Hola, tengo 26 años, mi experiencia como <b className="text-cyan-700">Desarrollador Web FullStack</b> es +4 años. en
-                empresa privada con giro en la contabilidad, a su vez tambien e realizado
-                proyectos freelance.
+                <span className="text-cyan-600 font-bold">Ingeniero en Sistemas Computacionales.</span><br/>
+                Hola, tengo 26 años, mi experiencia como <b className="text-cyan-700">Desarrollador Web FullStack</b> es +4 años. 
                 En mi experiencia laboral e utilizado múltiples lenguajes de programación 
-                para llevar a cabo siempre una solución adecuada a lo que se requiere desarrollar.  
-                Me apasiona el mundo de la programación y sigo en constante aprendizaje.
+                para llevar a cabo siempre una solución adecuada a lo que se requiere desarrollar.
+                Actualmente sigo en constante aprendizaje en el desarrollo FullStack y de técnicas como principios SOLID, 
+                para profundizar mis conocimientos, mejorar la calidad y agilidad en el desarrollo de software.
           </p>
         </div>
         <div className="flex justify-center">
@@ -25,8 +24,8 @@ export default function About() {
       </div>
       <hr className="py-5 px-3 w-full"></hr>
       
-      <blockquote className="hidden lg:block container m-auto w-full">
-        <div className=" grid grid-cols-2">
+      <blockquote className=" block md:container m-auto w-full">
+        <div className="grid grid-cols-2">
           <div className="grid sm:grid-cols-1 justify-self-end fixed bottom-[1rem] xl:ml-8">
             <ul className="pb-2 block">
               <li className="text-cyan-600 text-3xl mb-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 p-2">
