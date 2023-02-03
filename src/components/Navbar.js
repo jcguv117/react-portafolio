@@ -24,10 +24,15 @@ export default function Navbar({ fixed }) {
               (navbarOpen ? " flex" : " hidden")
             }
             id="example-navbar-danger" >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto mb-4">
               <li className="nav-item">
                 <a className="px-3 mt-4 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 no-underline" href="#about">
                   <span className="ml-2">SOBRE MI</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="px-3 mt-4 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 no-underline" href="#projects">
+                  <span className="ml-2">PROYECTOS</span>
                 </a>
               </li>
               <li className="nav-item">

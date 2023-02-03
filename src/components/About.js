@@ -3,9 +3,9 @@ import picture from '../assets/profile-pic.png';
 
 export default function About() {
   return (
-    <section id="about" className="container my-4 py-4">
+    <section id="about" className="container mx-auto my-4 py-4">
       
-      <div className="container grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-9/12 text-left">
+      <div className="container grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto text-left">
         <div className="col-span-1">
           <p className="text-gray-300 mb-5 text-xl text-justify">
                 <span className="text-cyan-600 font-bold">Ingeniero en Sistemas Computacionales.</span><br/>
@@ -22,12 +22,12 @@ export default function About() {
           </picture>
         </div>
       </div>
-      <hr className="py-5 px-3 w-full"></hr>
+      <hr className="py-5 px-3 w-full opacity-0"></hr>
       
-      <blockquote className=" block md:container m-auto w-full">
+      <blockquote className=" block md:container m-auto w-full absolute z-[100]">
         <div className="grid grid-cols-2">
           <div className="grid sm:grid-cols-1 justify-self-end fixed bottom-[1rem] xl:ml-8">
-            <ul className="pb-2 block">
+            <ul className="pb-2 block z-[100]">
               <li className="text-cyan-600 text-3xl mb-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 p-2">
                 <a target="_BLANk" className="text-zinc-200  hover:tooltip hover:tooltip-open hover:tooltip-right stroke-0" data-tip="Linkedin" href="https://www.linkedin.com/in/jcarlos-guevara-42044320b/" rel="noreferrer"><svg stroke="currentColor" fill="currentColor" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"></path></svg></a>
               </li>

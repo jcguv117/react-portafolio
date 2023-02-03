@@ -1,6 +1,5 @@
 
 import React from "react";
-import { CodeBracketIcon  } from '@heroicons/react/24/solid'
 import { projects } from "../data";
 
 export default function Projects() {
@@ -8,34 +7,38 @@ export default function Projects() {
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="">
         <div className="">
-          <CodeBracketIcon  className="mx-auto inline-block" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Aplicaciones que he construido
           </h1>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap grid grid-cols-2 m-4 gap-2">
           {projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4">
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+            <div className="p-4 w-full h-80">  
+              <a
+                href={project.link}
+                key={project.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full">
+                <div className="flex relative h-full">
+                  <img
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full z-20 text-left
+                    opacity-100 hover:opacity-0 animate-fade-in-down hover:animate-fade-out-down"
+                    src={project.image}
+                  />
+                  <div className="relative w-full h-full z-10 p-2">
+                    <h1 className="title-font text-lg font-medium text-white py-2 mb-3">
+                      {project.title}
+                    </h1>
+                    <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">
+                      {project.subtitle}
+                    </h2>
+                    <p className="leading-relaxed">{project.description}</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           ))}
         </div> 
       </div>
