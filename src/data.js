@@ -12,7 +12,8 @@ export const projects = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: image1,
-      link: "http://localhost/sispag",
+      website: "",
+      github: "https://github.com/jcguv117/sistema-de-pagares",
     },
     {
       title: "BITACORA TRACTOR",
@@ -20,7 +21,8 @@ export const projects = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: image2,
-      link: "http://rexsabana.sytes.net/bitacora-tractor/#/",
+      website: "http://rexsabana.sytes.net/bitacora-tractor/#/",
+      github: "https://github.com/jcguv117/BitacoraTractor",
     },
     {
       title: "PORTAFOLIO",
@@ -28,7 +30,8 @@ export const projects = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: image3,
-      link: "https://carlosguevara.netlify.app/",
+      website: "https://carlosguevara.netlify.app/",
+      github: "https://github.com/jcguv117/react-portafolio",
     },
     {
       title: "S.I.G.A.",
@@ -36,7 +39,8 @@ export const projects = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: image4,
-      link: "http://grancompu.ddns.net:88/",
+      website: "http://grancompu.ddns.net:88/",
+      github: "",
     },
   ];
 

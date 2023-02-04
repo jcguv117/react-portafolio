@@ -1,8 +1,10 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="container mx-auto my-4 py-4">
-        <h2 className="text-zinc-400">CONTACTAME</h2>
+    <section id="contact" className="container mx-auto my-4 py-[120px]">
+        <h1 className="md:text-4xl text-2xl font-medium title-font mb-4 text-white">
+            Contactame
+        </h1>
         <div className="flex items-center justify-center m-2 p-2 text-white">
             <form name="contact" method="POST" className="grid gap-x-8 gap-y-2 w-full" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />

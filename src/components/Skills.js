@@ -5,8 +5,10 @@ import { skills } from "../data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="container mx-auto my-4 py-4">
-        <h3 className="text-zinc-300">Conocimientos de tecnologías.</h3>
+    <section id="skills" className="container mx-auto my-4 py-[120px]">
+        <h1 className="md:text-4xl text-2xl font-medium title-font mb-4 text-white">
+          Conocimientos de tecnologías.
+        </h1>
         <div className="flex flex-wrap w-full lg:w-1/2 sm:mx-auto sm:mb-2 grid gap-2 grid-cols-2 sm:grid-cols-3">
           {skills.map((skill) => (
             <div key={skill.name} className="m-2">
