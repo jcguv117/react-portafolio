@@ -30,3 +30,6 @@ tool-tip{
     opacity: 1;
 }
 
+img.hover\:animate-bounce:hover{
+    animation-delay: 0.1s;
+}
