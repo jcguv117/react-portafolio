@@ -2,14 +2,14 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export const Home = () => {
   return (
-    <section id="home" className="container mx-auto my-4 py-[20rem]">
+    <section id="home" className="container mx-auto my-4 pt-[15rem] pb-[20rem]">
           <h1 className="text-cyan-500 text-2xl sm:text-4xl mb-5 font-bold h-8">
             <Typewriter
               words={["Hola! 👋, soy", "Hello! 👋, I'm"]}
               loop={false}
               typeSpeed={120}
               deleteSpeed={90}
-              delaySpeed={1900}
+              delaySpeed={2900}
               cursor
             />
           </h1>
@@ -20,7 +20,7 @@ export const Home = () => {
                 loop={false}
                 typeSpeed={70}
                 deleteSpeed={60}
-                delaySpeed={1300}
+                delaySpeed={2300}
                 cursor
               />
           </h2>
