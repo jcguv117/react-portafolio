@@ -3,7 +3,7 @@ import picture from '../assets/profile-pic.png';
 
 export default function About() {
   return (
-    <section id="about" className="container mx-auto my-4 py-[120px]">
+    <section id="about" className="container mx-auto my-4 py-[15rem]">
       
       <div className="container px-8 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="col-span-1">
@@ -22,13 +22,7 @@ export default function About() {
           </picture>
         </div>
       </div>
-      <div className="m-4 pt-[4rem]">
-        <a href="https://drive.google.com/file/d/1GK_qo1f77W8ZbBhR-8ISmmujeK2d12tS/view?usp=share_link" target="_blank" rel="noreferrer"
-           className="bg-sky-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-full cursor-pointer">
-          Ver Curriculum Vitae
-        </a>
-      </div>
-      <hr className="py-5 px-3 w-full opacity-0"></hr>
+
       
       <blockquote className=" block container mx-auto px-2 w-full absolute z-[100]">
         <div className="grid grid-cols-2">

@@ -39,7 +39,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="container mx-auto text-gray-400 body-font py-[120px]">
+    <section id="projects" className="container mx-auto text-gray-400 body-font pt-[10rem] pb-[10rem]">
       <div className="">
         <div className="">
           <h1 className="md:text-4xl text-2xl font-medium title-font mb-4 text-white">

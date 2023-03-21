@@ -1,7 +1,7 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="container mx-auto my-4 py-[120px]">
+    <section id="contact" className="container mx-auto my-4 py-[15rem]">
         <h1 className="md:text-4xl text-2xl font-medium title-font mb-4 text-white">
             Contactame
         </h1>

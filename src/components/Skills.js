@@ -5,7 +5,7 @@ import { skills } from "../data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="container mx-auto my-4 py-[120px]">
+    <section id="skills" className="container mx-auto my-4 py-[10rem]">
         <h1 className="md:text-4xl text-2xl font-medium title-font mb-4 text-white">
           Conocimientos de tecnologías.
         </h1>
