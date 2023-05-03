@@ -4,6 +4,7 @@ import image1 from './assets/sispag.png';
 import image2 from './assets/bitacora.png';
 import image3 from './assets/portafolio.png';
 import image4 from './assets/siga.png';
+import image5 from './assets/hispanic.png';
 
 export const projects = [
     {
@@ -15,6 +16,7 @@ export const projects = [
       image: image1,
       website: "",
       github: "https://github.com/jcguv117/sistema-de-pagares",
+      tools: ['PHP', 'JS', 'Bootstrap', 'JQuery'],
     },
     {
       id: 2,
@@ -25,6 +27,7 @@ export const projects = [
       image: image2,
       website: "http://rexsabana.sytes.net/bitacora-tractor/#/",
       github: "https://github.com/jcguv117/BitacoraTractor",
+      tools: ['React', 'JS', 'Material UI', 'Node'],
     },
     {
       id: 3,
@@ -35,6 +38,7 @@ export const projects = [
       image: image3,
       website: "https://carlosguevara.netlify.app/",
       github: "https://github.com/jcguv117/react-portafolio",
+      tools: ['React', 'JS', 'HTML5', 'TailwindCSS'],
     },
     {
       id: 4,
@@ -45,6 +49,18 @@ export const projects = [
       image: image4,
       website: "http://grancompu.ddns.net:88/",
       github: "",
+      tools: ['PHP', 'HTML5', 'Bootstrap', 'JQuery'],
+    },
+    {
+      id: 5,
+      title: "HISPANICINTERNATIONAL",
+      subtitle: "Catálogo de productos ",
+      description:
+        "Landingpage de catalogos de productos para empresa comercializadora, se realizó con el fin de renovar su sitio web antiguo y promover de mejor manera los servicios que realiza la empresa.",
+      image: image5,
+      website: "http://grancompu.com",
+      github: "",
+      tools: ['Vue', 'HTML5', 'JS', 'CSS'],
     },
   ];
 
@@ -62,4 +78,5 @@ export const projects = [
     {name: 'Git',         Icon: faSquareGit,  url: 'https://cdn.sanity.io/images/jqaxrty6/production/fb76165a82a59baf6606873c61b7fa68dfafa101-1200x1200.png'},
     {name: 'JQuery',      Icon: null,         url: 'https://cdn.sanity.io/images/jqaxrty6/production/cbaf286b0d917e923f20f659c047f84f013e90a7-512x512.png'},
     {name: 'TypeScript',  Icon: faSquareGit,  url: 'https://cdn.sanity.io/images/jqaxrty6/production/64f3e20f8ad906d56dea96863b6db87fad6efb52-64x64.png'},
+    {name: 'Laravel',     Icon: null,         url: 'https://cdn.iconscout.com/icon/free/png-256/laravel-226015.png'},
   ];

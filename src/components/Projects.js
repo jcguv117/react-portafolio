@@ -49,7 +49,7 @@ export default function Projects() {
         <div className="flex flex-wrap grid md:grid-cols-2 grid-cols-1 m-4 gap-2">
           {projects.map((project) => (
             <div 
-              className="px-4 py-4 my-4 w-full h-80"
+              className="px-4 py-4 my-4 w-full h-96"
               key={project.id}
               >  
                 <div className="flex relative h-full">
@@ -67,6 +67,15 @@ export default function Projects() {
                     <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">
                       {project.subtitle}
                     </h2>
+                    <ul className="my-2 text-white">
+                      { 
+                        project.tools.map((tool) => (
+                          <li key={tool} className="mx-1 inline before:content-['✅']">
+                            {tool}
+                          </li>
+                        ))
+                      }
+                    </ul>
                     <p className="leading-relaxed">{project.description}</p>
                   </div>
                 </div>
