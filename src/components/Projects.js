@@ -1,10 +1,21 @@
 
 import React, { useState } from "react";
 import { projects } from "../data";
+import ReactModal from 'react-modal';
 
+ReactModal.setAppElement('#root');
 export default function Projects() {
 
   const [visible, setVisible] = useState({show: Array(projects.length).fill(true)});
+  const [showModal, setShowModal] = useState({open: false, img: ''});
+
+  const handleOpenModal = (image) => {
+    setShowModal({open:true, img: image});
+  }
+  
+  const handleCloseModal = () => {
+    setShowModal({open:false, img: ''});
+  }
 
   const linkWebsite = (link) => {
      if (!link) return; 
@@ -38,6 +49,32 @@ export default function Projects() {
     setVisible(visible);
   }
 
+  const expandImageModal = () => {
+
+    return(
+      <ReactModal 
+        isOpen={showModal.open}
+        contentLabel="Modal Expand Image"
+        style={{
+          overlay: {
+            backgroundColor: '#000000e0',
+            zIndex: '150',
+          },
+          content: {
+            inset: '80px',
+            backgroundImage: `url("${showModal.img}")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+          }
+        }}
+      >
+      <button className="z-[151] float-right rounded-full bg-gray-100/75 hover:bg-gray-100 w-12" onClick={() => handleCloseModal()}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+      </button>
+    </ReactModal>
+    );
+  }
+
   return (
     <section id="projects" className="container mx-auto text-gray-400 body-font pt-[10rem] pb-[10rem]">
       <div className="">
@@ -49,7 +86,7 @@ export default function Projects() {
         <div className="flex flex-wrap grid md:grid-cols-2 grid-cols-1 m-4 gap-2">
           {projects.map((project) => (
             <div 
-              className="px-4 py-4 my-4 w-full h-96"
+              className="p-4 my-8 w-full h-96"
               key={project.id}
               >  
                 <div className="flex relative h-full">
@@ -87,10 +124,18 @@ export default function Projects() {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/></svg>
                       </div>
                     </li>
+                    <li className="text-3xl mb-3 p-2 rounded-full bg-gradient-to-r from-zinc-600 to-slate-600 w-12" >
+                      <div id={"div_prj_"+project.id} className="text-gray-300  hover:tooltip hover:tooltip-open hover:tooltip-right stroke-0 cursor-pointer z-100" onClick={ () => handleOpenModal(project.image)} >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                      </div>
+                    </li>
                 </ul>
             </div>
           ))}
         </div> 
+        <div>
+            {expandImageModal()}
+        </div>
       </div>
     </section>
   );
