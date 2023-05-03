@@ -61,16 +61,17 @@ export default function Projects() {
             zIndex: '150',
           },
           content: {
-            inset: '80px',
-            backgroundImage: `url("${showModal.img}")`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
+            inset: '70px',
+            padding: '0px',
           }
         }}
       >
-      <button className="z-[151] float-right rounded-full bg-gray-100/75 hover:bg-gray-100 w-12" onClick={() => handleCloseModal()}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
-      </button>
+      <div className="flex relative h-full w-full">
+        <button className="fixed right-[1em] z-[151] float-right rounded-full bg-gray-100/75 hover:bg-gray-100 w-12" onClick={() => handleCloseModal()}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+        </button>
+        <img className="w-full bg-auto bg-no-repeat bg-center" src={showModal.img} alt="project" />
+      </div>
     </ReactModal>
     );
   }
