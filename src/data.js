@@ -78,5 +78,7 @@ export const projects = [
     {name: 'Git',         Icon: faSquareGit,  url: 'https://cdn.sanity.io/images/jqaxrty6/production/fb76165a82a59baf6606873c61b7fa68dfafa101-1200x1200.png'},
     {name: 'JQuery',      Icon: null,         url: 'https://cdn.sanity.io/images/jqaxrty6/production/cbaf286b0d917e923f20f659c047f84f013e90a7-512x512.png'},
     {name: 'TypeScript',  Icon: faSquareGit,  url: 'https://cdn.sanity.io/images/jqaxrty6/production/64f3e20f8ad906d56dea96863b6db87fad6efb52-64x64.png'},
+    {name: 'Angular',     Icon: null,         url: 'https://static-00.iconduck.com/assets.00/file-type-angular-icon-476x512-31akx6uw.png'},
+    {name: 'C#',          Icon: null,         url: 'https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png'},
     {name: 'Laravel',     Icon: null,         url: 'https://cdn.iconscout.com/icon/free/png-256/laravel-226015.png'},
   ];
