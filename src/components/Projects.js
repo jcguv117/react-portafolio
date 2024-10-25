@@ -84,7 +84,7 @@ export default function Projects() {
             Aplicaciones que he construido
           </h1>
         </div>
-        <div className="flex flex-wrap grid md:grid-cols-2 grid-cols-1 m-4 gap-2">
+        <div className="grid md:grid-cols-2 grid-cols-1 m-4 gap-2">
           {projects.map((project) => (
             <div 
               className="p-4 my-8 w-full h-96"
@@ -117,7 +117,7 @@ export default function Projects() {
                     <p className="leading-relaxed">{project.description}</p>
                   </div>
                 </div>
-                <ul className="flex justify-center flex-wrap gap-4 py-2 block z-[100]">
+                <ul className="flex justify-center flex-wrap gap-4 py-2 z-[100]">
                     { linkWebsite(project.website) }
                     { linkGithub(project.github) }
                     <li className="text-3xl mb-3 p-2 rounded-full bg-gradient-to-r from-zinc-600 to-slate-600 w-12" >

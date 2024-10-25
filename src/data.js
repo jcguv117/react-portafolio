@@ -29,17 +29,17 @@ export const projects = [
       github: "https://github.com/jcguv117/BitacoraTractor",
       tools: ['React', 'JS', 'Material UI', 'Node'],
     },
-    {
-      id: 3,
-      title: "PORTAFOLIO",
-      subtitle: "Portafolio Personal",
-      description:
-        "Portafolio de proyectos elaborado por mi.",
-      image: image3,
-      website: "https://carlosguevara.netlify.app/",
-      github: "https://github.com/jcguv117/react-portafolio",
-      tools: ['React', 'JS', 'HTML5', 'TailwindCSS'],
-    },
+    // {
+    //   id: 3,
+    //   title: "PORTAFOLIO",
+    //   subtitle: "Portafolio Personal",
+    //   description:
+    //     "Portafolio de proyectos elaborado por mi.",
+    //   image: image3,
+    //   website: "https://carlosguevara.netlify.app/",
+    //   github: "https://github.com/jcguv117/react-portafolio",
+    //   tools: ['React', 'JS', 'HTML5', 'TailwindCSS'],
+    // },
     {
       id: 4,
       title: "S.I.G.A.",

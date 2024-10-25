@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import SocialMedia from './components/SocialMedia';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Skills/>
       <Contact/>
+      <SocialMedia/>
       <Footer/>
     </div>
   );
