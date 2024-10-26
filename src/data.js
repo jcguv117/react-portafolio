@@ -8,7 +8,6 @@ import image5 from './assets/hispanic.png';
 
 export const projects = [
     {
-      id: 1,
       title: "SISPAG",
       subtitle: "Sistema de Pagarés",
       description:
@@ -19,7 +18,6 @@ export const projects = [
       tools: ['PHP', 'JS', 'Bootstrap', 'JQuery'],
     },
     {
-      id: 2,
       title: "BITACORA TRACTOR",
       subtitle: "Bitacora de Monitoreo de Unidades",
       description:
@@ -30,7 +28,6 @@ export const projects = [
       tools: ['React', 'JS', 'Material UI', 'Node'],
     },
     // {
-    //   id: 3,
     //   title: "PORTAFOLIO",
     //   subtitle: "Portafolio Personal",
     //   description:
@@ -41,7 +38,6 @@ export const projects = [
     //   tools: ['React', 'JS', 'HTML5', 'TailwindCSS'],
     // },
     {
-      id: 4,
       title: "S.I.G.A.",
       subtitle: "Sistema de Inventario",
       description:
@@ -52,7 +48,6 @@ export const projects = [
       tools: ['PHP', 'HTML5', 'Bootstrap', 'JQuery'],
     },
     {
-      id: 5,
       title: "HISPANICINTERNATIONAL",
       subtitle: "Catálogo de productos ",
       description:
