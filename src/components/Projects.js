@@ -25,11 +25,19 @@ export default function Projects() {
     expand    : "./icon/expand.svg",
   }
 
-  const containerDivButton = (icon, cb=()=>{}) => {
+  const containerDivButton = (icon, cb=()=>{}, tooltip='') => {
     return(
-      <div className="flex justify-center text-3xl p-2 rounded-full bg-gradient-to-r from-zinc-600 to-slate-600 select-none">
+      <div className="group relative inline-flex items-center justify-center text-3xl p-2 rounded-full bg-gradient-to-r from-zinc-600 to-slate-600 select-none">
         <button className="text-gray-300 hover:tooltip hover:tooltip-open hover:tooltip-right stroke-0" onClick={cb}>
           <img className="h-6 w-6" src={icon} />
+          <div class="ease-in duration-300 opacity-0 group-hover:block group-hover:opacity-100 transition-all">
+            <div class="ease-in-out duration-500 -translate-y-4 pointer-events-none transition-all group-hover:-translate-y-16 absolute left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-slate-300 before:-top-2" >
+              <div class="rounded-sm bg-black py-1 px-2">
+                  <p class="whitespace-nowrap">{tooltip}</p>
+              </div>
+              <div class="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black"></div>
+            </div>
+          </div>
         </button>
       </div>
      )
@@ -116,14 +124,14 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="flex justify-center flex-wrap gap-4 py-2 z-[100]">
-                    { project.website && containerDivButton(icons.website, () => handleOpenURL(project.website)) }
-                    { project.github && containerDivButton(icons.github, () => handleOpenURL(project.github)) }
+                    { project.website && containerDivButton(icons.website, () => handleOpenURL(project.website), 'Visitar Sitio Web') }
+                    { project.github && containerDivButton(icons.github, () => handleOpenURL(project.github), 'Ir a repositorio') }
                     { 
                         visible[index] 
-                         ? containerDivButton(icons.visible, () => handleVisibleImage(index)) 
-                         : containerDivButton(icons.notVisible, () => handleVisibleImage(index))
+                         ? containerDivButton(icons.visible, () => handleVisibleImage(index), 'Mostrar/Ocultar Imagen') 
+                         : containerDivButton(icons.notVisible, () => handleVisibleImage(index), 'Mostrar/Ocultar Imagen')
                     }
-                    { containerDivButton(icons.expand, () => handleOpenModal(project.image)) }
+                    { containerDivButton(icons.expand, () => handleOpenModal(project.image), 'Ver imagen') }
                 </div>
             </div>
           ))}
