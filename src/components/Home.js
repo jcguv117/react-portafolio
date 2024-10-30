@@ -13,8 +13,8 @@ export const Home = () => {
               cursor
             />
           </h1>
-          <h1 className="text-gray-300 text-4xl sm:text-6xl mb-5 font-bold">Carlos Guevara</h1>
-          <h2 className="text-gray-400 text-4xl sm:text-5xl mb-4 font-bold h-12">
+          <h1 className="text-zinc-100 text-4xl sm:text-6xl mb-5 font-bold">Carlos Guevara</h1>
+          <h2 className="text-zinc-300 text-4xl sm:text-5xl mb-4 font-bold h-12">
             <Typewriter
                 words={["Desarrollador Web Fullstack","Web Developer FullStack!"]}
                 loop={false}
