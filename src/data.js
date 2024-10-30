@@ -38,6 +38,16 @@ export const projects = [
       tools: ['HTML', 'TailwindCSS', 'JQuery', 'DataTables'],
     },
     {
+      title: "PASSWORD GENERATOR",
+      subtitle: "Generador de contraseñas",
+      description:
+        "Esta herramienta tiene como función generar contraseñas aleatorias, permite crear contraseñas únicas y robustas de manera personalizada. El usuario puede ajustar diversos parámetros, como la longitud de la contraseña, el conjunto de caracteres permitidos (letras mayúsculas y minúsculas, números, símbolos) y la complejidad de las combinaciones.",
+      image: "/images/projects/app-password.png",
+      website: "https://jcguv117.github.io/password-generator/",
+      github: "https://github.com/jcguv117/password-generator/",
+      tools: ['HTML', 'TailwindCSS', 'JS'],
+    },
+    {
       title: "SISPAG",
       subtitle: "Sistema de Pagarés",
       description:
