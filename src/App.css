@@ -2,22 +2,6 @@
   text-align: center;
 }
 
-.custom-shape-divider-top-1669359534 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1669359534 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 262px;
-}
-
-.custom-shape-divider-top-1669359534 .shape-fill {
-  fill: #17428B;
+.cover {
+  background-image: url("/public/images/cover-image.svg");
 }
