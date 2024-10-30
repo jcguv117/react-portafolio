@@ -27,19 +27,19 @@ export default function Projects() {
 
   const containerDivButton = (icon, cb=()=>{}, tooltip='') => {
     return(
-      <div className="group relative inline-flex items-center justify-center text-3xl p-2 rounded-full bg-gradient-to-r from-zinc-600 to-slate-600 select-none">
-        <button className="text-gray-300 hover:tooltip hover:tooltip-open hover:tooltip-right stroke-0" onClick={cb}>
+      <button className="group relative inline-flex items-center justify-center text-3xl p-2 rounded-full bg-gradient-to-r from-zinc-600 to-slate-600 select-none" onClick={cb}>
+        <div className="text-gray-300 hover:tooltip hover:tooltip-open hover:tooltip-right stroke-0">
           <img className="h-6 w-6" src={icon} />
-          <div class="ease-in duration-300 opacity-0 group-hover:block group-hover:opacity-100 transition-all">
-            <div class="ease-in-out duration-500 -translate-y-4 pointer-events-none transition-all group-hover:-translate-y-16 absolute left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-slate-300 before:-top-2" >
-              <div class="rounded-sm bg-black py-1 px-2">
-                  <p class="whitespace-nowrap">{tooltip}</p>
+          <div className="ease-in duration-300 opacity-0 group-hover:block group-hover:opacity-100 transition-all">
+            <div className="ease-in-out duration-500 -translate-y-4 pointer-events-none transition-all group-hover:-translate-y-16 absolute left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-slate-300 before:-top-2" >
+              <div className="rounded-sm bg-black py-1 px-2">
+                  <p className="whitespace-nowrap">{tooltip}</p>
               </div>
-              <div class="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black"></div>
+              <div className="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black"></div>
             </div>
           </div>
-        </button>
-      </div>
+        </div>
+      </button>
      )
   }
 
@@ -67,16 +67,22 @@ export default function Projects() {
             zIndex: '150',
           },
           content: {
-            inset: '70px',
+            top: '70px',
+            button: '70px',
+            right: '1%',
+            left: '1%',
             padding: '0px',
+            backgroundColor: 'transparent',
+            border: 'none',
+            alignContent: 'center',
           }
         }}
       >
-      <div className="flex relative h-full w-full">
-        <button className="fixed right-[1em] z-[151] float-right rounded-full bg-gray-100/75 hover:bg-gray-100 w-12" onClick={() => handleCloseModal()}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+      <div className="flex relative w-full">
+        <button className="group fixed flex justify-center items-center right-[1%] -mt-12 z-[151] float-right rounded-full w-10 h-10 bg-gradient-to-r from-zinc-600 to-slate-600 select-none" onClick={() => handleCloseModal()}>
+          <img className="h-8" src="./icon/xmark.svg"/>
         </button>
-        <img className="w-full bg-auto bg-no-repeat bg-center" src={showModal.img} alt="project" />
+        <img className="w-full h-full rounded-md bg-auto bg-no-repeat bg-center" src={showModal.img} style={{minHeight: '30rem'}} />
       </div>
     </ReactModal>
     );
@@ -100,7 +106,7 @@ export default function Projects() {
                   <img
                     id={"img_prj_" + index}
                     alt={project.title}
-                    className={`absolute inset-0 w-full h-full z-20 text-left opacity-100 hover:opacity-0 animate-fade-in-down 
+                    className={`absolute inset-0 w-full h-full z-20 text-left opacity-100 hover:opacity-0 animate-fade-in-down rounded-md
                       hover:animate-fade-out-down ${visible[index] ? 'block' : 'hidden'}`}
                     src={project.image}
                   />
