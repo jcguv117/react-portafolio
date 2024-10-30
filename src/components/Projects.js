@@ -117,7 +117,7 @@ export default function Projects() {
                     <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">
                       {project.subtitle}
                     </h2>
-                    <ul className="my-2 text-white">
+                    <ul className="flex flex-wrap justify-center my-2 text-white">
                       { 
                         project.tools.map((tool) => (
                           <li key={tool} className="mx-1 inline before:content-['✅']">

@@ -8,6 +8,36 @@ import image5 from './assets/hispanic.png';
 
 export const projects = [
     {
+      title: "NODE SCRAPING",
+      subtitle: "Aplicación de Scraping de datos",
+      description:
+        "Es una herramienta sencilla para la obtención de información actualizada sobre los tipos de cambio publicados por el Banco de México. A través del formulario, puedes generar automáticamente un archivo PDF con los datos más recientes, extraídos directamente de la página fuente.",
+      image: "/images/projects/app-scraping.png",
+      website: null,
+      github: "https://github.com/jcguv117/node-scraping/",
+      tools: ['NODE', 'HTML5', 'CSS', 'Puppeteer', 'Express'],
+    },
+    {
+      title: "SIMULADOR DE MARCADORES",
+      subtitle: "Simulador de google maps",
+      description:
+        "Esta aplicación genera marcadores con información aleatoria dentro del mapa de google maps, utiliza un archivo GeoJSON para dibujar un polígono de coordenadas en el mapa y agrega marcadores dentro de su área.",
+      image: "/images/projects/app-map-google.png",
+      website: "https://simulador-map-google-jcguv117s-projects.vercel.app/",
+      github: "https://github.com/jcguv117/ag-map-google/",
+      tools: ['Angular', 'TailwindCSS', 'TS', 'Google Map Api'],
+    },
+    {
+      title: "CALCULADORA DE AMORTIZACIONES",
+      subtitle: "Simulador de amortizaciones",
+      description:
+        "Esta aplicación funciona como una herramienta para calcular una tabla de amortización de pagos en base al monto, tasa de interés y su cantidad de periodos, además de proporcionar herramientas para exportar los datos generados.",
+      image: "/images/projects/app-amortizacion.png",
+      website: "https://jcguv117.github.io/amortization-calculator/",
+      github: "https://github.com/jcguv117/amortization-calculator/",
+      tools: ['HTML', 'TailwindCSS', 'JQuery', 'DataTables'],
+    },
+    {
       title: "SISPAG",
       subtitle: "Sistema de Pagarés",
       description:
@@ -23,39 +53,9 @@ export const projects = [
       description:
         "Sistema de monitoreo de unidades para empresa transportista, realiza las funciones CRUD con permisos de usuario y modificaciones instantaneas entre usuarios para exportar la información a otro sistema propio de la empresa.",
       image: image2,
-      website: "http://rexsabana.sytes.net/bitacora-tractor/#/",
+      website: "",
       github: "https://github.com/jcguv117/BitacoraTractor",
       tools: ['React', 'JS', 'Material UI', 'Node'],
-    },
-    // {
-    //   title: "PORTAFOLIO",
-    //   subtitle: "Portafolio Personal",
-    //   description:
-    //     "Portafolio de proyectos elaborado por mi.",
-    //   image: image3,
-    //   website: "https://carlosguevara.netlify.app/",
-    //   github: "https://github.com/jcguv117/react-portafolio",
-    //   tools: ['React', 'JS', 'HTML5', 'TailwindCSS'],
-    // },
-    {
-      title: "S.I.G.A.",
-      subtitle: "Sistema de Inventario",
-      description:
-        "Sistema de inventario, elaborardo para la empresa Grancompu, sistema que ayuda para inventariar productos comerciales, tales como monitores, computadoras, laptops y accesorios.",
-      image: image4,
-      website: "http://grancompu.ddns.net:88/",
-      github: "",
-      tools: ['PHP', 'HTML5', 'Bootstrap', 'JQuery'],
-    },
-    {
-      title: "HISPANICINTERNATIONAL",
-      subtitle: "Catálogo de productos ",
-      description:
-        "Landingpage de catalogos de productos para empresa comercializadora, se realizó con el fin de renovar su sitio web antiguo y promover de mejor manera los servicios que realiza la empresa.",
-      image: image5,
-      website: "http://grancompu.com",
-      github: "",
-      tools: ['Vue', 'HTML5', 'JS', 'CSS'],
     },
   ];
 
