@@ -12,8 +12,8 @@ import SocialMedia from './components/SocialMedia';
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <div className='bg-black cover'>
-        <Navbar/>
         <Home/>
       </div>
       <About />

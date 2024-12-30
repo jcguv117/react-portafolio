@@ -2,7 +2,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export const Home = () => {
   return (
-    <section id="home" className="container mx-auto my-4 pt-[15rem] pb-[20rem]">
+    <section id="home" className="container mx-auto my-4 mt-0 pt-[15rem] pb-[20rem]">
           <h1 className="text-cyan-500 text-2xl sm:text-4xl mb-5 font-bold h-8">
             <Typewriter
               words={["Hola! 👋, soy", "Hello! 👋, I'm"]}
