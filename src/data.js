@@ -28,6 +28,16 @@ export const projects = [
       tools: ['Angular', 'TailwindCSS', 'TS', 'Google Map Api'],
     },
     {
+      title: "PointOfSale App",
+      subtitle: "Demo Punto de Venta",
+      description:
+        "Esta aplicación es un punto de venta sencillo que utiliza el 'local storage' con el manejador de Zustand para almacenar las ordenes activas, sus funciones consisten en administrar las ordenes y mostrar sus totales.",
+      image: "/images/projects/app-pos.png",
+      website: "https://neon-tulumba-8dd4bd.netlify.app/",
+      github: "https://github.com/jcguv117/prct-pos-app",
+      tools: ['Preact', 'TailwindCSS', 'TS', 'Zustand'],
+    },
+    {
       title: "CALCULADORA DE AMORTIZACIONES",
       subtitle: "Simulador de amortizaciones",
       description:
