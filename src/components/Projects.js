@@ -29,7 +29,7 @@ export default function Projects() {
     return(
       <button className="group relative inline-flex items-center justify-center text-3xl p-2 rounded-full bg-gradient-to-r from-zinc-600 to-slate-600 select-none" onClick={cb}>
         <div className="text-gray-300 hover:tooltip hover:tooltip-open hover:tooltip-right stroke-0">
-          <img className="h-6 w-6" src={icon} />
+          <img className="h-6 w-6" src={icon} alt="" />
           <div className="ease-in duration-300 opacity-0 group-hover:block group-hover:opacity-100 transition-all">
             <div className="ease-in-out duration-500 -translate-y-4 pointer-events-none transition-all group-hover:-translate-y-16 absolute left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-slate-300 before:-top-2" >
               <div className="rounded-sm bg-black py-1 px-2">
@@ -80,9 +80,9 @@ export default function Projects() {
       >
       <div className="flex relative w-full">
         <button className="group fixed flex justify-center items-center right-[1%] -mt-12 z-[151] float-right rounded-full w-10 h-10 bg-gradient-to-r from-zinc-600 to-slate-600 select-none" onClick={() => handleCloseModal()}>
-          <img className="h-8" src="./icon/xmark.svg"/>
+          <img className="h-8" src="./icon/xmark.svg" alt="close" />
         </button>
-        <img className="w-full h-full rounded-md bg-auto bg-no-repeat bg-center" src={showModal.img} style={{minHeight: '30rem'}} />
+        <img className="w-full h-full rounded-md bg-auto bg-no-repeat bg-center" src={showModal.img} style={{minHeight: '30rem'}} alt="" />
       </div>
     </ReactModal>
     );

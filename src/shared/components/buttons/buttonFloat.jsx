@@ -12,7 +12,7 @@ const ButtonFloat = ({label, classColor, pathImg='', widthImg, linkURL=''}) => {
       >
         <div
           className="flex items-center justify-center w-full transition-all duration-300 group-hover:justify-start group-hover:px-3">
-            <img style={{width: widthImg}} src={pathImg} />
+            <img style={{width: widthImg}} src={pathImg} alt="" />
         </div>
         <div
           className="absolute left-10 ml-4 transform translate-x-full opacity-0 text-white text-lg font-semibold transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">

@@ -2,9 +2,6 @@ import { faReact, faSquareJs, faPhp, faCss3, faHtml5, faBootstrap, faSquareGit }
 //images
 import image1 from './assets/sispag.png';
 import image2 from './assets/bitacora.png';
-import image3 from './assets/portafolio.png';
-import image4 from './assets/siga.png';
-import image5 from './assets/hispanic.png';
 
 export const projects = [
     {
